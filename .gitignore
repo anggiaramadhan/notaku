@@ -1,0 +1,202 @@
+# Server - Ruby on Rails
+
+# Ignore bundler config.
+/server/.bundle
+
+# Ignore all log files.
+/server/log/*.log
+/server/tmp
+
+# Ignore database configuration.
+/server/config/database.yml
+/server/config/secrets.yml
+
+# Ignore application configuration.
+/server/config/application.yml
+
+# Ignore cached files and directories.
+/server/tmp/cache
+/server/tmp/sockets
+
+# Ignore uploaded files in development and test environments.
+/server/storage/*
+
+# Ignore public assets.
+/server/public/assets
+/server/public/packs
+
+# Ignore node_modules directory for JavaScript dependencies.
+/server/node_modules
+
+# Ignore yarn-error.log.
+/server/yarn-error.log
+
+# Ignore macOS directory metadata files.
+/server/.DS_Store
+
+# Ignore environment variables file.
+/server/.env
+
+# Ignore webpacker config.
+/server/config/webpacker.yml
+
+# Ignore puma config.
+/server/config/puma.rb
+
+# Ignore Spring application preloader.
+/server/spring/*.pid
+
+# Ignore RuboCop configuration.
+/server/.rubocop.yml
+
+# Ignore rspec retry files.
+/server/.rspec_status
+
+# Ignore Visual Studio Code workspace settings.
+/server/.vscode/settings.json
+
+# Ignore WebStorm workspace settings.
+/server/.idea
+
+# Ignore SQLite database.
+/server/db/*.sqlite3
+
+# Ignore uploaded files in production environment.
+/server/public/uploads
+/server/public/system
+
+# Ignore credentials.
+/server/config/credentials.yml.enc
+
+# Ignore Capistrano deploy config.
+/server/config/deploy*
+
+# Ignore Webpacker compiled packs.
+/server/public/packs
+
+# Ignore yarn packages.
+/server/yarn-error.log
+
+# Ignore any generated coverage reports.
+/server/coverage
+
+# Ignore Docker-related files.
+/server/Dockerfile
+/server/docker-compose.yml
+
+# Ignore Capybara's web drivers logs.
+/server/log/*.html
+
+# Ignore Spring's temporary files.
+/server/spring/*.log
+
+# Ignore Zeus.json for the Zeus application preloader.
+/server/zeus.json
+
+# Ignore node coverage files.
+/server/coverage
+
+# Ignore MiniTest's temporary files.
+/server/test/tmp
+
+# Ignore any other local configuration files.
+/server/config/*.local.yml
+
+# Ignore RVM settings.
+/server/.rvmrc
+
+# Ignore Yarn's .yarn-integrity file.
+/server/.yarn-integrity
+
+# Ignore Mac specific hidden files.
+/server/.AppleDouble
+/server/.LSOverride
+
+# Ignore local .env files.
+/server/.env.*.local
+
+# Ignore Heroku local configuration.
+/server/.heroku
+
+# Ignore RubyMine project files.
+/server/.idea
+
+# Ignore yarn state file.
+/server/.yarn-metadata.json
+
+# Client - Vue Vite
+
+# Ignore Node.js dependencies.
+/client/node_modules
+
+# Ignore Vite build output.
+/client/dist
+
+# Ignore .env.local files.
+/client/.env.local
+
+# Ignore generated index.html.
+/client/index.html
+
+# Ignore Vite's cache directory.
+/client/.vite
+
+# Ignore MacOS directory metadata files.
+/client/.DS_Store
+
+# Ignore temporary files.
+/client/.yarn
+
+# Ignore yarn-error.log.
+/client/yarn-error.log
+
+# Ignore Visual Studio Code workspace settings.
+/client/.vscode/settings.json
+
+# Ignore JetBrains IDE project files.
+/client/.idea
+
+# Ignore Node.js debug logs.
+/client/*.log
+
+# Ignore production builds.
+/client/.build
+
+# Ignore local development server config.
+/client/vite.config.js
+
+# Ignore any other local configuration files.
+/client/*.local.*
+
+# Ignore Vue.js generated coverage reports.
+/client/coverage
+
+# Ignore Docker-related files.
+/client/Dockerfile
+/client/docker-compose.yml
+
+# Ignore yarn packages.
+/client/yarn-error.log
+
+# Ignore Vue.js .eslintcache.
+/client/.eslintcache
+
+# Ignore editor-specific temporary files.
+/client/.editorconfig
+
+# Ignore Vue.js debug logs.
+/client/*.log
+
+# Ignore Vue.js state file.
+/client/.yarn-metadata.json
+
+# Ignore Vue.js pnpm debug logs.
+/client/pnpm-debug.log
+
+# Ignore Vue.js PNPM store directory.
+/client/.pnpm-store
+
+# Ignore Vue.js PNPM file log.
+/client/pnpmfile.log
+
+
