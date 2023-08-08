@@ -12,6 +12,16 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
+      meta: {
+        title: 'Notaku - Login',
+        metatags: [
+          {
+            name: 'login',
+            description:
+              'Login to notaku application. Start write your technical writing with markdown format'
+          }
+        ]
+      },
       component: () => import('@/views/LoginView.vue')
     }
   ]
