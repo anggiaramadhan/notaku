@@ -12,12 +12,10 @@ module Api
       end
     end
 
-    def destroy; end
-
     private
 
     def login_params
-      params.permit(:email, :password)
+      params.required(:session).permit(:email, :password)
     end
   end
 end
