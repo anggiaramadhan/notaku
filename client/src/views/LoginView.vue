@@ -33,13 +33,27 @@
 
 <script setup lang="ts">
 import { ref, reactive, inject } from 'vue';
+import { useUserStore } from '@/stores/user'
+
 import api from '@/lib/api'
+import router from '@/router';
 
 const axios: any = inject('axios')
+const store = useUserStore()
 
 interface ErrorField {
     email: boolean;
     password: boolean;
+}
+
+interface FormField {
+    email: string;
+    password: string
+}
+
+interface LocalStorageUser {
+    email: string;
+    token: string;
 }
 
 const email = ref('')
@@ -48,7 +62,26 @@ const isValid: ErrorField = reactive({ email: true, password: true })
 
 async function onLogin() {
     onValidate()
-    const data = await axios.post(api.loginApi)
+    const body: FormField = {
+        email: email.value,
+        password: password.value
+    }
+
+    try {
+        const response = await axios.post(api.loginApi, body)
+        if (response) {
+            const payload: LocalStorageUser = {
+                email: body.email,
+                token: response.data.token
+            }
+            localStorage.setItem('user', JSON.stringify(payload))
+            store.setEmail(body.email)
+            store.setToken(response.data.token)
+            router.push({ path: '/' })
+        }
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 function onValidate() {
