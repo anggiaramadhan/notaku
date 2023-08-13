@@ -23,7 +23,7 @@ class ApplicationController < ActionController::API
   # return user id
   def decode(token)
     decoded_token = JWT.decode(token, SECRET_KEY_BASE, true, { algorithm: 'HS256' })
-    decoded_token[0][:id]
+    decoded_token[0]['id']
   rescue JWT::InvalidAudError
     render json: { message: 'invalid authorization' }, status: :unauthorized
   rescue JWT::VerificationError
