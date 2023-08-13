@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :sessions, only: :create
+    resources :notes, only: :create
   end
   resources :users
 end

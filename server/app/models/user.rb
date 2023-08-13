@@ -11,6 +11,7 @@ class User < ApplicationRecord
 
   SECRET_KEY_BASE = Rails.application.credentials.secret_key_base
 
+  # return token for jwt
   def token
     payload = { id:, email: }
     JWT.encode(payload, SECRET_KEY_BASE, 'HS256')
