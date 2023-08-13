@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import LayoutDashboard from '@/components/LayoutDashboard.vue'
 </script>
 
 <template>
-    <div>home view ya</div>
+    <LayoutDashboard>
+        this is from home
+    </LayoutDashboard>
 </template>
